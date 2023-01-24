@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
-<body>
+<body>    
     <div class="full-width full-page-height">
         <div class="toolbar d-flex flex-r justify-between">
             <button class="toolbar-btn fw-500 fs-32 typography-style">
@@ -43,8 +45,8 @@
                 Логика может привести из пункта А в пункт Б, <br>
                 А воображение - куда угодно
             </p>
-            <div style="margin: 40px 0 0 0;" class="full-width d-flex flex-r align-center">
-                <div style="flex: 1; row-gap: 20px;" class="d-flex flex-c align-start">
+            <div name="response" style="margin: 40px 0 0 0; column-gap: 20px;" class="full-width d-flex flex-r align-center">
+                <div style="flex: 1  2; row-gap: 20px;" class="d-flex flex-c align-start">
                     <p class="typography-style fw-600 fs-40">
                         ЧТО ВЫ <br/>
                          УЗНАЕТЕ?
@@ -53,11 +55,27 @@
                         Помимо изучения языков, это познание культуры общения, менталитета местных жителей и полная вовлеченность в африканский регион.
                     </p>
                 </div>
-                <div style="flex: 2;">
-
+                <div style="flex: 3; height: 360px; padding-bottom: 10px;" class="hidden">
+                    <!-- Slider main container -->
+                    <div class="swiper full-height full-width">
+                     <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide1" src="./pictures/slide1.jpg"/></div>
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide2" src="./pictures/slide2.jpg"/></div>
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide3" src="./pictures/slide3.jpg"/></div>     
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide4" src="./pictures/slide4.jpg"/></div>     
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide5" src="./pictures/slide5.jpg"/></div>     
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide6" src="./pictures/slide6.jpg"/></div>
+                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img alt="slide7" src="./pictures/slide7.jpg"/></div>     
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/helper.js"></script>
 </body>
 </html>
