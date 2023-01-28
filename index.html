@@ -15,18 +15,18 @@
 <body>    
     <div style="overflow-x: hidden; overflow-y: auto;" class="full-width full-page-height align-center d-flex flex-c scroll-dsable">
         <div class="toolbar d-flex flex-r justify-between">
-            <button class="toolbar-btn fw-500 fs-32 typography-style">
+            <button data-goto=".about-key"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style">
                 Главная
-            </button>
-            <button class="toolbar-btn fw-500 fs-32 typography-style">
+            </button>     
+            <button data-goto=".about-key"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style">
                 О нас
             </button>
-            <button class="toolbar-btn fw-500 fs-32 typography-style">
+            <button data-goto=".contacts-key"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style">
                 Контакты
             </button>
         </div>
 
-        <div style="margin-top: 50px; position: relative;" class="full-width d-flex flex-c justify-center align-center">
+        <div style="margin-top: 50px; position: relative;" class="full-width d-flex flex-c justify-center align-center about-key">
             <img alt="africa" src="./pictures/home.jpg" />
             <p style="text-align: end; position: absolute;" class="typography-style fs-90 fw-600 fff">
                 Африка? - ДА!
@@ -225,7 +225,7 @@
                         </div> 
                     </div>                               
                 </div>      
-                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width">
+                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width about-key">
                     <b>
                         Лекторы
                     </b>
@@ -234,8 +234,106 @@
                     Профессионалы, которые покажут и научат:
                 </p>                                                            
             </div>
-        </div>                                            
-    </div>         
+        </div>
+        <div style="display: block;height: 400px; padding-bottom: 50px;" class="full-width">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="full-width full-height d-flex flex-c align-center">
+                        <div style="border-radius: 50%;width: 150px; height: 150px;" class="hidden">
+                            <img alt="a" src="./pictures/slide5.jpg" />
+                        </div>
+                        <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <b>
+                                 Test Name
+                            </b>
+                        </p>
+                    </div>
+                  </div>  
+                  <div class="swiper-slide">
+                    <div class="full-width full-height d-flex flex-c align-center">
+                        <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
+                            <img alt="a" src="./pictures/slide2.jpg" />
+                        </div>
+                        <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <b>
+                                 Test Name 1
+                            </b>
+                        </p>
+                    </div>
+                  </div>  
+                  <div class="swiper-slide">
+                    <div class="full-width full-height d-flex flex-c align-center">
+                        <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
+                            <img alt="a" src="./pictures/slide1.jpg" />
+                        </div>
+                        <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <b>
+                                 Test Name 2
+                            </b>
+                        </p>
+                    </div>
+                  </div>  
+                  <div class="swiper-slide">
+                    <div class="full-width full-height d-flex flex-c align-center">
+                        <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
+                            <img alt="a" src="./pictures/slide3.jpg" />
+                        </div>
+                        <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <b>
+                                 Test Name 3
+                            </b>
+                        </p>
+                    </div>
+                  </div>  
+                  <div class="swiper-slide">
+                    <div class="full-width full-height d-flex flex-c align-center">
+                        <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
+                            <img alt="a" src="./pictures/slide4.jpg" />
+                        </div>
+                        <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <b>
+                                 Test Name 4
+                            </b>
+                        </p>
+                    </div>
+                  </div>                 
+                </div>
+              </div>  
+        </div> 
+        <div style="margin-top: 50px;" class="full-width d-flex flex-c justify-center align-center">
+            <div style="height: 400px;" class="hidden">
+                <img alt="africa" src="./pictures/home.jpg" />
+            </div>
+            <p style="text-align: center; max-width: 700px; margin-top: -200px;" class="typography-style fs-32 fw-600 fff">                
+                К 2050 году суахили станет самым используемым языком на континенте
+            </p>                  
+        </div>            
+        <div style="max-width: 1104px; position: relative; margin-top: 200px;" class="d-flex flex-c justify-center align-center" >
+            <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width">
+                <b>
+                    О главном
+                </b>
+            </p>     
+            <p style="text-align: center;font-size: 18px; margin-top: 70px;" class="typography-style fw-500 full-width">                
+в процессе
+Мы печем и собираем торты вручную, обычно ночью. На каждый тратим 4—6 часов: мешаем, выпекаем, собираем, украшаем. 
+
+Мы работаем только на профессиональном кондитерском оборудовании Kitchen Aid. Так мы можем гарантировать качество и соблюдение технологии.
+В магазине вы сами забираете торт в пластиковой ерунде и несете его на праздник, стыдливо снимая эту ерунду. У нас всё не так: мы сами доставляем и помогаем вам с подачей торта. Так он выглядит пот-ря-са-ю-ще.
+
+Ну и, наконец, мы гарантируем, что торт будет офигенный. Если торт вам не понравится — мы заберем его остатки и вернем деньги (но такого пока не было).
+            </p>
+
+            <p style="color: rgba(2, 3, 3, 0.94); text-align: center; margin-top: 200px;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                <b>
+                    Контакты
+                </b>
+            </p>    
+        </div>         
+    </div>             
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/helper.js"></script>
