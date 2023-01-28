@@ -19,6 +19,12 @@ body { -ms-overflow-style: none; }
 /* фф (свойство больше не работает, других способов тоже нет)*/
 body { overflow: -moz-scrollbars-none; }
 
+.scroll-dsable::-webkit-scrollbar { width: 0; }
+
+.scroll-dsable { -ms-overflow-style: none; }
+
+.scroll-dsable { overflow: -moz-scrollbars-none; }
+
 p {
     padding: 0;
     margin: 0;
@@ -46,6 +52,10 @@ p {
 
 .justify-end {
     justify-content: flex-end;
+}
+
+.aling-sc {
+    align-items: flex-start;
 }
 
 .align-start {
@@ -127,4 +137,14 @@ p {
 
 div {
     box-sizing: border-box;
+}
+
+.static-width-650 {
+    width: 650px;
+}
+
+@media (max-width: 650px) {
+    .aling-sc {
+        align-items: center;
+    }
 }

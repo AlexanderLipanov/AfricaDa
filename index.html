@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>    
-    <div class="full-width full-page-height">
+    <div style="overflow-x: hidden; overflow-y: auto;" class="full-width full-page-height align-center d-flex flex-c scroll-dsable">
         <div class="toolbar d-flex flex-r justify-between">
             <button class="toolbar-btn fw-500 fs-32 typography-style">
                 Главная
@@ -26,162 +26,192 @@
             </button>
         </div>
 
-        <div style="height: calc(100% - 50px);" class="full-width hidden d-flex flex-c justify-center align-center">
+        <div style="margin-top: 50px; position: relative;" class="full-width d-flex flex-c justify-center align-center">
             <img alt="africa" src="./pictures/home.jpg" />
-            <p style="text-align: end;" class="typography-style fs-90 fw-600 fff absolute">
-                АФРИКА  <br/>
-                ДА!
-            </p>
-            <div style="margin-top: 70%;" class="full-width absolute d-flex flex-r justify-end">
-                <p style="text-align: start; width: auto;" class="typography-style fw-600 fs-22 fff pa-20">
-                    "Есть два способа прожить жизнь. <br/>
-                    Первый - будто чудес не существует. <br/>
-                    Второй - будто кругом одни чудеса!"
+            <p style="text-align: end; position: absolute;" class="typography-style fs-90 fw-600 fff">
+                Африка? - ДА!
+            </p>                  
+        </div>
+        <div style="max-width: 1104px; position: relative;" class="d-flex flex-c justify-center align-center" >
+            <div class="full-width pa-20 d-flex flex-c align-center">
+                <p style="color: rgba(2, 3, 3, 0.94); text-align: center; margin-top: 70px;" class="typography-style fw-500 fs-32 full-width">
+                    Мы - первая в России школа <br/>
+                     африканских языков для всех
                 </p>
-            </div>          
-        </div>
-        <div style="row-gap: 100px;" class="full-width pa-20 d-flex flex-c align-center">
-            <p style="color: rgba(2, 3, 3, 0.94); text-align: center; margin-top: 70px;" class="typography-style fw-500 fs-32 full-width">
-                Логика может привести из пункта А в пункт Б, <br>
-                А воображение - куда угодно
-            </p>
-            <div style="margin: 40px 0 0 0; column-gap: 20px; overflow: hidden;" class="full-width d-flex flex-rc align-start">
-                <div style="row-gap: 20px;" class="d-flex flex-c">
-                    <p class="typography-style fw-600 fs-40">
-                        ЧТО ВЫ <br/>
-                         УЗНАЕТЕ?
-                    </p>
-                    <p class="typography-style fw-400 fs-22">
-                        Помимо изучения языков, это познание культуры общения, менталитета местных жителей и полная вовлеченность в африканский регион.
-                    </p>
-                </div>
-                <div style="height: 360px; padding-bottom: 10px;" class="hidden">
-                    <!-- Slider main container -->
-                    <div class="swiper full-height full-width">
-                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide1" src="./pictures/slide1.jpg"/></div>
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide2" src="./pictures/slide2.jpg"/></div>
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide3" src="./pictures/slide3.jpg"/></div>     
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide4" src="./pictures/slide4.jpg"/></div>     
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide5" src="./pictures/slide5.jpg"/></div>     
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide6" src="./pictures/slide6.jpg"/></div>
-                    <div class="swiper-slide d-flex flex-c align-center justify-center hidden"><img style="width: 100%" alt="slide7" src="./pictures/slide7.jpg"/></div>     
+                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 50px;" class="typography-style fw-500 fs-32 full-width">
+                    Откройте для себя новый мир!
+                </p>
+                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 70px;" class="typography-style fw-500 fs-32 full-width">
+                    Увлекательно и без воды:
+                </p>
+                <div style="row-gap: 40px; column-gap: 40px; margin-top: 50px; flex-wrap: wrap;" class="d-flex flex-rc">
+                    <div style="row-gap: 50px; flex: 1" class="d-flex flex-c align-center">
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p  style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Носители языка
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Все преподаватели специалисты своего 
+                                 дела
+                            </p>
+                        </div>
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Подход
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Профессиональный переводчик- 
+                                африканист, который поможет разобраться 
+                                 почему и как
+                            </p>
+                        </div>
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Персонально
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Занятия проводятся в комфортной 
+                                 обстановке не более 10 человек
+                            </p>
+                        </div>
                     </div>
-                </div>
-                </div>
+                    <div style="row-gap: 50px; flex: 1;" class="d-flex flex-c align-center">
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    90 минут
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Любое количество занятий в неделю
+                            </p>
+                        </div>
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Курс для новичков и не 
+                                     только...
+                                </b>
+                            </p>
+                            <p style="font-size: 18px; text-align: center;" class="typography-style fw-500">
+                                Любой уровень ваших знаний подойдёт для 
+                                 начала занятий
+                            </p>
+                        </div> 
+                    </div>                               
+                </div>   
+                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width">
+                    <b>
+                        Занятия
+                    </b>
+                </p>    
+                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 30px;" class="typography-style fw-500 fs-22 full-width">
+                    Как они проходят:
+                </p>  
+                <div style="margin-top: 50px; row-gap: 50px;" class="d-flex flex-c alinn-start static-width-650">
+                    <div class="d-flex flex-rc align-center justify-between full-width">
+                        <p class="typography-style fw-500 fs-32">
+                            <b>
+                                Понедельник - <br/>
+                                Пятница
+                            </b>                   
+                        </p>
+                        <div style="row-gap: 20px; column-gap: 20px;" class="d-flex flex-c aling-sc">
+                            <p class="typography-style fw-500 fs-20">
+                                15:00 - 21:00
+                            </p>
+                            <p class="typography-style fw-500 fs-30"> 
+                                СУАХИЛИ, ЙОРУБА, АФРИКААНС, <br/>
+                                КРИО, ПИДЖИН ИНГЛИШ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-rc align-center justify-between full-width">
+                        <p class="typography-style fw-500 fs-32">
+                            <b>
+                                Суббота - <br/>
+                                Воскресение
+                            </b>                   
+                        </p>
+                        <div style="row-gap: 20px; column-gap: 20px;" class="d-flex flex-c aling-sc">
+                            <p class="typography-style fw-500 fs-20">
+                                10:00 - 21:00
+                            </p>
+                            <p class="typography-style fw-500 fs-30"> 
+                                СУАХИЛИ, ЙОРУБА, АФРИКААНС, <br/>
+                                КРИО, ПИДЖИН ИНГЛИШ
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+                <div style="row-gap: 50px; column-gap: 50px; margin-top: 50px; flex-wrap: wrap;" class="d-flex flex-rc justify-between">
+                    <div style="row-gap: 50px; column-gap: 50px;flex: 1;" class="d-flex flex-c align-center">
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p  style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Суахили
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Язык межнационального общения 
+                                 Восточной и Южной Африки. Один из 
+                                  наиболее значимых языков африканского континента. Более 150 млн носителей по всему миру.
+                            </p>
+                        </div>
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Йоруба
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Распространен в западных и юго-западных районах Нигерии,
+                                в Бенине, Того, Сьерра-Леоне. Общее число говорящих
+                                около 20 млн чел.
+                            </p>
+                        </div>
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Африкаанс
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Произошел от нидерландского языка и используется, преимущественно, в Южной Африке и Намибии. Считается самым простым германским языком в мире.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="row-gap: 50px; flex: 1;" class="d-flex flex-c align-center">
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Крио
+                                </b>
+                            </p>
+                            <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                Креольский язык широко распространен в Западной Африке. На данном языке говорят в Великобритании, Гамбии, Сенегале, США, Австралии и Гвинее.
+                            </p>
+                        </div>
+                        <div style="row-gap: 25px;" class="d-flex flex-c align-center">
+                            <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <b>
+                                    Пиджин инглиш
+                                </b>
+                            </p>
+                            <p style="font-size: 18px; text-align: center;" class="typography-style fw-500">
+                                Представляет собой упрощённое средство коммуникации разных этнических групп. Зарегистрировано около 50 форм языка. Не имеет исконных носителей языка.
+                            </p>
+                        </div> 
+                    </div>                               
+                </div>                                      
             </div>
-            <div style="column-gap: 20px;" class="d-flex flex-rc justify-between align-start fuul-width">
-                <div class="d-flex flex-c align-center">
-                    <div>
-                        <img style="width: 80px;" alt="gif" src="https://0ndephy97.ukit.me/uploads/s/2/i/3/2i3uxtmuhmke/img/full_Sa4iPfjj.gif" />
-                    </div>
-                    <p style="margin-top: 25px;" class="typography-style fw-600 fs-32"> 
-                        <b>
-                            СУАХИЛИ
-                        </b>
-                    </p>
-                    <p style="text-align: start; margin-top: 50px;" class="typography-style fw-300 fs-22">
-                        Язык народа суахили. Крупнейший из языков банту по числу говорящих и один из наиболее значительных языков африканского континента.
-                    </p>
-                </div>
-                <div class="d-flex flex-c align-center">
-                    <div>
-                        <img style="width: 80px;" alt="gif" src="https://0ndephy97.ukit.me/uploads/s/2/i/3/2i3uxtmuhmke/img/full_WAliQ22g.gif" />
-                    </div>
-                    <p style="margin-top: 25px;" class="typography-style fw-600 fs-32"> 
-                        <b>
-                            ЙОРУБА
-                        </b>
-                    </p>
-                    <p style="text-align: start; margin-top: 50px;" class="typography-style fw-300 fs-22">
-                        Группа родственных негроидных народов, населяющих западную Африку. Имеется небольшая диаспора в Канаде.
-                    </p>
-                </div>
-                <div class="d-flex flex-c align-center">
-                    <div>
-                        <img style="width: 80px;" alt="gif" src="https://0ndephy97.ukit.me/uploads/s/2/i/3/2i3uxtmuhmke/img/full_sNpoGsZy.gif" />
-                    </div>
-                    <p style="margin-top: 25px;" class="typography-style fw-600 fs-32"> 
-                        <b>
-                            АФРИКААНС
-                        </b>
-                    </p>
-                    <p style="text-align: start; margin-top: 50px;" class="typography-style fw-300 fs-22">
-                        Один из германских языков, один из 11 официальных языков Южно-Африканской Республики, также распространён в Намибии.
-                    </p>
-                </div>
-            </div>
-            <div style="margin: 40px 0 0 0; column-gap: 20px; overflow: hidden;" class="full-width d-flex flex-rc justify-between align-start">
-                <div style="row-gap: 20px; height: auto;" class="d-flex flex-c">
-                    <p class="typography-style fw-600 fs-40">
-                        ПОЧЕМУ <br/>
-                         АФРИКА ?
-                    </p>
-                    <p class="typography-style fw-400 fs-22">
-                        Африка – удивительный, <br/>
-                         богатый мир, начинающий <br/>
-                          свое активное развитие в <br/>
-                           различных сферах.
-                    </p>
-                </div>
-                <div style="height: 360px; padding-bottom: 10px; width: 100%;" class="d-flex flex-c align-start justify-center hidden">
-                    <img style="width: 100%;" alt="capetown" src="./pictures/CapeTown.jpg" />
-                </div>
-            </div>
-            <div style="column-gap: 20px;" class="d-flex flex-rc justify-between align-start fuul-width">
-                <div class="d-flex flex-c align-center">
-                    <div>
-                        <img style="width: 80px;" alt="gif" src="https://0ndephy97.ukit.me/uploads/s/2/i/3/2i3uxtmuhmke/img/full_8KkfNDwK.gif" />
-                    </div>
-                    <p style="margin-top: 25px;text-align: center;" class="typography-style fw-600 fs-32"> 
-                        <b>
-                            Практика с первого урока
-                        </b>
-                    </p>
-                    <p style="text-align: start; margin-top: 50px;" class="typography-style fw-300 fs-22">
-                        Преподаватели – исключительно профессиональные носители изучаемого языка из разных уголков континента, поэтому вы сможете получить эффективное, креативное и доступное обучение.
-                    </p>
-                </div>
-                <div class="d-flex flex-c align-center">
-                    <div>
-                        <img style="width: 80px;" alt="gif" src="https://0ndephy97.ukit.me/uploads/s/2/i/3/2i3uxtmuhmke/img/full_Cu3jZnoW.gif" />
-                    </div>
-                    <p style="margin-top: 25px;text-align: center;" class="typography-style fw-600 fs-32"> 
-                        <b>
-                            Наглядный <br/>
-                             прогресс
-                        </b>
-                    </p>
-                    <p style="text-align: start; margin-top: 50px;" class="typography-style fw-300 fs-22">
-                        Благодаря умело выстроенной методике, обучение будет происходить без многочасовых занятий с книгами. Следите за своими успехами в развитии всех навыков: чтение, лексика, грамматика, письмо и аудирование. Научитесь говорить на языке уверенно и грамотно.
-                    </p>
-                </div>
-                <div class="d-flex flex-c align-center">
-                    <div>
-                        <img style="width: 80px;" alt="gif" src="https://0ndephy97.ukit.me/uploads/s/2/i/3/2i3uxtmuhmke/img/full_caeHoqEH.gif" />
-                    </div>
-                    <p style="margin-top: 25px; text-align: center;" class="typography-style fw-600 fs-32"> 
-                        <b>
-                            Различные уровни преподавания
-                        </b>
-                    </p>
-                    <p style="text-align: start; margin-top: 50px;" class="typography-style fw-300 fs-22">
-                        Обучение происходит в небольших группах с индивидуальным подходом к каждому ученику. Вы можете выбрать абсолютно любой уровень занятий: от новичка до продвинутого. Выбирайте уровень, который подходит именно вам!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="full-width hidden d-flex flex-c justify-center align-center">
-            <img alt="africa" src="./pictures/africaFW.jpg" />
-            <p style="text-align: center;" class="typography-style fs-90 fw-600 fff absolute">
-                BY 2050 SWAHILI <br/>
-                 WILL BE SPOKEN <br/>
-                  BY WHOLE OF <br/>
-                   AFRICA
-            </p>                   
-        </div>
+        </div>                
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
