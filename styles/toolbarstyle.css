@@ -10,6 +10,38 @@
     z-index: 2;
 }
 
+
+.toolbar-btn:hover {
+    color:  rgba(118, 195, 243, 0.49)
+}; 
+
+.active-menu-btn {
+    color: blue !important;
+}
+
+.burger {
+    display: none;
+    border: none;
+}
+
+#burger-menu {
+    background-color: #edeef0;
+    -webkit-box-shadow: 0px 17px 20px 9px rgba(30, 32, 34, 0.2);
+    -moz-box-shadow: 0px 17px 20px 9px rgba(30, 32, 34, 0.2);
+    box-shadow: 0px 17px 20px 9px rgba(30, 32, 34, 0.2);
+    z-index: 3;
+}
+
+@media (max-width: 650px) {    
+    .toolbar-btn {
+        display: none !important;
+    }
+    
+    .burger {
+        display: block;
+    }
+}
+
 .toolbar-btn {
     flex: 1 1 auto;
     border-radius: 8px;
@@ -17,8 +49,3 @@
     height: 100%;
     cursor: pointer;    
 }
-
-.toolbar-btn:hover {
-   color:  rgba(118, 195, 243, 0.49)
-}; 
-

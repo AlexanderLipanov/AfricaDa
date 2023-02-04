@@ -36,7 +36,7 @@ if(isMobile.any()) {
     if(elems.length > 0) {
         elems.forEach(el => {
             el.addEventListener("click", function(e) {
-                el.classList.toggle(" active");
+                el.classList.toggle("active");
             });
         });       
     }
@@ -53,6 +53,21 @@ if(links.length > 0)
     })
 }
 
+function toggleBurger() {
+
+    let m = document.getElementById("burger-menu");
+
+    m.classList.toggle("active-menu");
+}
+
+function closeBurger()
+{
+    let m = document.getElementById("burger-menu");
+
+    if(m.classList.contains("active-menu")) {
+        m.classList.toggle("active-menu");
+    }
+}
 
     function onMenuClick(e) {
         const menuLink = e.target;
@@ -69,5 +84,7 @@ if(links.length > 0)
             top: gotoBlockValue,
             behavior: "smooth",
         });
-        e.preventDefault();   
+        e.preventDefault();  
+        
+        closeBurger(); 
     }

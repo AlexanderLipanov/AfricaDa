@@ -58,6 +58,10 @@ p {
     align-items: flex-start;
 }
 
+.justify-around {
+    justify-content: space-around;
+}
+
 .align-start {
     align-items: flex-start;
 }
@@ -142,6 +146,10 @@ div {
 .static-width-650 {
     width: 650px;
 }
+
+.active-menu {
+    display: flex !important; 
+ }
 
 @media (max-width: 650px) {
     .aling-sc {
