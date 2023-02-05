@@ -72,6 +72,16 @@ function closeBurger()
     function onMenuClick(e) {
         const menuLink = e.target;
 
+        let links = document.getElementsByName("scroll-button");
+
+        links.forEach(l => {
+            if(l.classList.contains("active-link")) {
+                l.classList.remove("active-link");
+            }
+        });
+
+        menuLink.classList.toggle("active-link");
+
         var d = document.getElementById("page").scrollTop;
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
         let t = gotoBlock.getBoundingClientRect().top;
