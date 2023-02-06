@@ -9,28 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>        
+        <link rel="stylesheet" href="./styles/map.css"/>
     <title>Document</title>
 </head>
 <body>  
-    <div id="burger-menu" style="width: 300px; display: none; height: 300px; position: fixed; margin-top: 50px;" class="flex-c justify-around align-center bg-toolbar">
-        <a data-goto=".home-key" href="#" style="text-align: center;"  name="scroll-button" class="fw-500 fs-32 typography-style link-style">
+    <div id="burger-menu" style="display: flex; height: 100vh; position: fixed; margin-top: 74px; row-gap: 20px;" class="flex-c justify-start align-center bg-toolbar">
+        <a data-goto=".home-key" href="#" style="text-align: center; margin-top: 30px;"  name="scroll-button" class="fw-500 fs-22 typography-style link-style">
             Главная
         </a>     
-        <a data-goto=".about-key" href="#" style="text-align: center;"  name="scroll-button" class="fw-500 fs-32 typography-style link-style">
+        <a data-goto=".about-key" href="#" style="text-align: center;"  name="scroll-button" class="fw-500 fs-22 typography-style link-style">
             О нас
         </a>
-        <a data-goto=".contacts-key" href="#" style="text-align: center;"  name="scroll-button" class="fw-500 fs-32 typography-style link-style">
+        <a data-goto=".contacts-key" href="#" style="text-align: center; background-color: rgb(255,221,45); border-radius: 100px; padding: 13px 35px;"  name="scroll-button" class="fw-500 fs-22 typography-style link-style">
             Контакты
         </a>
     </div>
     <div style="display: block;" class="full-width">
         <div id="page" style="overflow-x: hidden; overflow-y: auto;" class="full-width full-page-height align-center d-flex flex-c scroll-dsable">
             <div class="toolbar d-flex flex-r justify-between toolbar bg-toolbar">
+                <div style="padding-left: 20px;" class="d-flex flex-r full-height align-center">
+                    <p class="typography-style fw-500 fs-22">
+                        АФРИКАДА! +7 <br/>
+                        (967) 079 78 41
+                    </p>
+                </div>
                 <button style="background: none;" onclick="toggleBurger()" class="burger">
-                    <img alt="menu" src="./icons/Status_listmenu.png" />
+                    <img style="width: 30px; height: 30px;" alt="menu" src="./icons/Status_listmenu.png" />
                 </button>
-                <a data-goto=".home-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
+                <!-- <a data-goto=".home-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
                     Главная
                 </a>     
                 <a data-goto=".about-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
@@ -38,7 +45,7 @@
                 </a>
                 <a data-goto=".contacts-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
                     Контакты
-                </a>
+                </a> -->
             </div>           
             <div style="margin-top: 50px; position: relative;" class="full-width d-flex flex-c justify-center align-center home-key">
                 <img alt="africa" src="./pictures/home.jpg" />
@@ -48,48 +55,48 @@
             </div>
             <div style="max-width: 1104px; position: relative;" class="d-flex flex-c justify-center align-center" >
                 <div class="full-width pa-20 d-flex flex-c align-center">
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center; margin-top: 70px;" class="typography-style fw-500 fs-32 full-width">
+                    <p style="text-align: center; margin-top: 70px;" class="typography-style fw-500 fs-32 full-width general-color-text">
                         Мы - первая в России школа <br/>
                          африканских языков для всех
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 50px;" class="typography-style fw-500 fs-32 full-width">
+                    <p style=" text-align: center;margin-top: 50px;" class="typography-style fw-500 fs-32 full-width general-color-text">
                         Откройте для себя новый мир!
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 70px;" class="typography-style fw-500 fs-32 full-width">
+                    <p style=" text-align: center;margin-top: 70px;" class="typography-style fw-500 fs-32 full-width general-color-text">
                         Увлекательно и без воды:
                     </p>
                     <div style="row-gap: 40px; column-gap: 40px; margin-top: 50px; flex-wrap: wrap;" class="d-flex flex-rc">
                         <div style="row-gap: 50px; flex: 1" class="d-flex flex-c align-center">
                             <div style="row-gap: 25px;" class="d-flex flex-c align-center">
-                                <p  style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p  style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Носители языка
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Все преподаватели специалисты своего 
                                      дела
                                 </p>
                             </div>
                             <div style="row-gap: 25px;" class="d-flex flex-c align-center">
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Подход
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Профессиональный переводчик- 
                                     африканист, который поможет разобраться 
                                      почему и как
                                 </p>
                             </div>
                             <div style="row-gap: 25px;" class="d-flex flex-c align-center">
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Персонально
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Занятия проводятся в комфортной 
                                      обстановке не более 10 человек
                                 </p>
@@ -97,67 +104,67 @@
                         </div>
                         <div style="row-gap: 50px; flex: 1;" class="d-flex flex-c align-center">
                             <div style="row-gap: 25px;" class="d-flex flex-c align-center">
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         90 минут
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Любое количество занятий в неделю
                                 </p>
                             </div>
                             <div style="row-gap: 25px;" class="d-flex flex-c align-center">
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Курс для новичков и не 
                                          только...
                                     </b>
                                 </p>
-                                <p style="font-size: 18px; text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px; text-align: center;" class="typography-style fw-500 general-color-text">
                                     Любой уровень ваших знаний подойдёт для 
                                      начала занятий
                                 </p>
                             </div> 
                         </div>                               
                     </div>   
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width">
+                    <p style="text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width general-color-text">
                         <b>
                             Занятия
                         </b>
                     </p>    
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 30px;" class="typography-style fw-500 fs-22 full-width">
+                    <p style="text-align: center;margin-top: 30px;" class="typography-style fw-500 fs-22 full-width general-color-text">
                         Как они проходят:
                     </p>  
                     <div style="margin-top: 50px; row-gap: 50px;" class="d-flex flex-c alinn-start static-width-650">
                         <div class="d-flex flex-rc align-center justify-between full-width">
-                            <p class="typography-style fw-500 fs-32">
+                            <p class="typography-style fw-500 fs-32 general-color-text">
                                 <b>
                                     Понедельник - <br/>
                                     Пятница
                                 </b>                   
                             </p>
                             <div style="row-gap: 20px; column-gap: 20px;" class="d-flex flex-c aling-sc">
-                                <p class="typography-style fw-500 fs-20">
+                                <p class="typography-style fw-500 fs-20 general-color-text">
                                     15:00 - 21:00
                                 </p>
-                                <p class="typography-style fw-500 fs-30"> 
+                                <p class="typography-style fw-500 fs-30 general-color-text"> 
                                     СУАХИЛИ, ЙОРУБА, АФРИКААНС, <br/>
                                     КРИО, ПИДЖИН ИНГЛИШ
                                 </p>
                             </div>
                         </div>
                         <div class="d-flex flex-rc align-center justify-between full-width">
-                            <p class="typography-style fw-500 fs-32">
+                            <p class="typography-style fw-500 fs-32 general-color-text">
                                 <b>
                                     Суббота - <br/>
                                     Воскресение
                                 </b>                   
                             </p>
                             <div style="row-gap: 20px; column-gap: 20px;" class="d-flex flex-c aling-sc">
-                                <p class="typography-style fw-500 fs-20">
+                                <p class="typography-style fw-500 fs-20 general-color-text">
                                     10:00 - 21:00
                                 </p>
-                                <p class="typography-style fw-500 fs-30"> 
+                                <p class="typography-style fw-500 fs-30 general-color-text"> 
                                     СУАХИЛИ, ЙОРУБА, АФРИКААНС, <br/>
                                     КРИО, ПИДЖИН ИНГЛИШ
                                 </p>
@@ -170,12 +177,12 @@
                                 <div>
                                     <img class="full-width full-height" alt="a" src="./pictures/card1.jfif" />
                                 </div>
-                                <p  style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p  style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Суахили
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Язык межнационального общения 
                                      Восточной и Южной Африки. Один из 
                                       наиболее значимых языков африканского континента. Более 150 млн носителей по всему миру.
@@ -185,12 +192,12 @@
                                 <div>
                                     <img class="full-width full-height" alt="a" src="./pictures/card1.jfif" />
                                 </div>
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Йоруба
                                     </b>
                                 </p>
-                                <p class="fw-500">
+                                <p class="fw-500 general-color-text">
                                     Распространен в западных и юго-западных районах Нигерии,
                                     в Бенине, Того, Сьерра-Леоне. Общее число говорящих
                                     около 20 млн чел.
@@ -200,12 +207,12 @@
                                 <div>
                                     <img class="full-width full-height" alt="a" src="./pictures/card1.jfif" />
                                 </div>
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Африкаанс
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Произошел от нидерландского языка и используется, преимущественно, в Южной Африке и Намибии. Считается самым простым германским языком в мире.
                                 </p>
                             </div>
@@ -215,12 +222,12 @@
                                 <div>
                                     <img class="full-width full-height" alt="a" src="./pictures/card1.jfif" />
                                 </div>
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Крио
                                     </b>
                                 </p>
-                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px;text-align: center;" class="typography-style fw-500 general-color-text">
                                     Креольский язык широко распространен в Западной Африке. На данном языке говорят в Великобритании, Гамбии, Сенегале, США, Австралии и Гвинее.
                                 </p>
                             </div>
@@ -228,23 +235,23 @@
                                 <div>
                                     <img class="full-width full-height" alt="a" src="./pictures/card1.jfif" />
                                 </div>
-                                <p style="text-align: center;" class="typography-style fw-500 fs-32">
+                                <p style="text-align: center;" class="typography-style fw-500 fs-32 general-color-text">
                                     <b>
                                         Пиджин инглиш
                                     </b>
                                 </p>
-                                <p style="font-size: 18px; text-align: center;" class="typography-style fw-500">
+                                <p style="font-size: 18px; text-align: center;" class="typography-style fw-500 general-color-text">
                                     Представляет собой упрощённое средство коммуникации разных этнических групп. Зарегистрировано около 50 форм языка. Не имеет исконных носителей языка.
                                 </p>
                             </div> 
                         </div>                               
                     </div>      
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width about-key">
+                    <p style="text-align: center;margin-top: 100px;" class="typography-style fw-500 fs-32 full-width about-key general-color-text">
                         <b>
                             Лекторы
                         </b>
                     </p>    
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;margin-top: 30px;" class="typography-style fw-500 fs-22 full-width">
+                    <p style="text-align: center;margin-top: 30px;" class="typography-style fw-500 fs-22 full-width general-color-text">
                         Профессионалы, которые покажут и научат:
                     </p>                                                            
                 </div>
@@ -259,7 +266,7 @@
                             <div style="border-radius: 50%;width: 150px; height: 150px;" class="hidden">
                                 <img alt="a" src="./pictures/slide5.jpg" />
                             </div>
-                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22 general-color-text">
                                 <b>
                                      Test Name
                                 </b>
@@ -271,7 +278,7 @@
                             <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
                                 <img alt="a" src="./pictures/slide2.jpg" />
                             </div>
-                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22 general-color-text">
                                 <b>
                                      Test Name 1
                                 </b>
@@ -283,7 +290,7 @@
                             <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
                                 <img alt="a" src="./pictures/slide1.jpg" />
                             </div>
-                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22 general-color-text">
                                 <b>
                                      Test Name 2
                                 </b>
@@ -295,7 +302,7 @@
                             <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
                                 <img alt="a" src="./pictures/slide3.jpg" />
                             </div>
-                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22 general-color-text">
                                 <b>
                                      Test Name 3
                                 </b>
@@ -307,7 +314,7 @@
                             <div style="border-radius: 50%; width: 150px; height: 150px;" class="hidden">
                                 <img alt="a" src="./pictures/slide4.jpg" />
                             </div>
-                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22">
+                            <p style="width: 200px; text-align: center; margin-top: 30px;" class="typography-style fw-500 fs-22 general-color-text">
                                 <b>
                                      Test Name 4
                                 </b>
@@ -326,12 +333,12 @@
                 </p>                  
             </div>            
             <div style="max-width: 1104px; position: relative; margin-top: 200px;" class="d-flex flex-c justify-center align-center" >
-                <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width">
+                <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width general-color-text">
                     <b>
                         О главном
                     </b>
                 </p>     
-                <p style="text-align: center;font-size: 18px; margin-top: 70px;" class="typography-style fw-500 full-width">                
+                <p style="text-align: center;font-size: 18px; margin-top: 70px;" class="typography-style fw-500 full-width general-color-text">                
                     в процессе
                     Мы печем и собираем торты вручную, обычно ночью. На каждый тратим 4—6 часов: мешаем, выпекаем, собираем, украшаем. 
     
@@ -341,39 +348,42 @@
                     Ну и, наконец, мы гарантируем, что торт будет офигенный. Если торт вам не понравится — мы заберем его остатки и вернем деньги (но такого пока не было).
                 </p>
     
-                <p style="color: rgba(2, 3, 3, 0.94); text-align: center; margin-top: 200px;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                <p style="text-align: center; margin-top: 200px;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                     <b>
                         Контакты
                     </b>
                 </p>  
+                <div style="width: 80%; height: 80vh;">
+                  
+                </div>
                 <div style="row-gap: 40px;" class="d-flex flex-c align-center">
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                         <b>
                             Адрес
                         </b>
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                         <b>
                             Москва, ул. Пырьева 5А с 2
                         </b>
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                         <b>
                             Время работы
                         </b>
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                         <b>
                             пн — пт: 10:00—20:00 <br/>
                             сб — вс: 10:00—18:00
                         </b>
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                         <b>
                             Для связи
                         </b>
                     </p>
-                    <p style="color: rgba(2, 3, 3, 0.94); text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key">
+                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
                         <b>
                             +7 (967) 079 78 41 <br/>
                             Александр Вячеславович

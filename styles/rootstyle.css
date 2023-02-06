@@ -7,7 +7,11 @@
 body {
     width: 100%;
     height: 100%;
-    background: url("../pictures/vintage-crumpled-paper-textured-background.jpg") center;    
+    background: #FFEBC1;    
+}
+
+body, html {
+    -webkit-font-smoothing: antialiased;
 }
 
 /* хром, сафари */
@@ -148,7 +152,12 @@ div {
 }
 
 .active-menu {
-    display: flex !important; 
+    /* display: flex !important;  */
+    right: 0 !important;
+ }
+
+ .general-color-text {
+    color: #9e510d;
  }
 
 @media (max-width: 650px) {

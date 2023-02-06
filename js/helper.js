@@ -86,7 +86,7 @@ function closeBurger()
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
         let t = gotoBlock.getBoundingClientRect().top;
         let b = document.querySelector("toolbar");
-        let h = b === undefined || b === null ? 50 : b.offsetHeight;
+        let h = b === undefined || b === null ? 74 : b.offsetHeight;
         const gotoBlockValue = d + t + scrollY - h - 20;
 
         document.getElementById("page").scrollTo({
