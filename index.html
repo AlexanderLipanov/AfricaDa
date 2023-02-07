@@ -12,6 +12,27 @@
         href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>        
         <link rel="stylesheet" href="./styles/map.css"/>
     <title>Document</title>
+       <script src="https://api-maps.yandex.ru/2.1/?apikey=e76b3df7-83b2-4914-9c22-7cbe6b8fac7a&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            // 55.725936, 37.5263560 point
+            var myMap = new ymaps.Map("map", {
+                center: [55.725936, 37.5255983],
+                zoom: 17
+            });
+
+            // Вспомогательный класс, который можно использовать
+            // вместо GeoObject c типом геометрии «Point» (см. предыдущий пример)
+            var myPlacemark = new ymaps.Placemark([55.725936, 37.5263560], {
+                iconCaption: "Москва, ул. Пырьева 5А с 2",
+            }, {
+                preset: 'islands#redIcon'
+            });
+            myMap.geoObjects.add(myPlacemark);
+        }    
+    </script>
 </head>
 <body>  
     <div id="burger-menu" style="display: flex; height: 100vh; position: fixed; margin-top: 74px; row-gap: 20px;" class="flex-c justify-start align-center bg-toolbar">
@@ -28,7 +49,7 @@
     <div style="display: block;" class="full-width">
         <div id="page" style="overflow-x: hidden; overflow-y: auto;" class="full-width full-page-height align-center d-flex flex-c scroll-dsable">
             <div class="toolbar d-flex flex-r justify-between toolbar bg-toolbar">
-                <div style="padding-left: 20px;" class="d-flex flex-r full-height align-center">
+                <div style="margin-left: 20px;" class="d-flex flex-r full-height align-center">
                     <p class="typography-style fw-500 fs-22">
                         АФРИКАДА! +7 <br/>
                         (967) 079 78 41
@@ -37,15 +58,15 @@
                 <button style="background: none;" onclick="toggleBurger()" class="burger">
                     <img style="width: 30px; height: 30px;" alt="menu" src="./icons/Status_listmenu.png" />
                 </button>
-                <!-- <a data-goto=".home-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
+                <a data-goto=".home-key" href="#" style="text-align: center;"  name="scroll-button" class="fw-500 fs-22 typography-style link-style toolbar-btn">
                     Главная
                 </a>     
-                <a data-goto=".about-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
+                <a data-goto=".about-key" href="#" style="text-align: center;"  name="scroll-button" class="fw-500 fs-22 typography-style link-style toolbar-btn">
                     О нас
                 </a>
-                <a data-goto=".contacts-key" href="#" style="text-align: center;"  name="scroll-button" class="toolbar-btn fw-500 fs-32 typography-style link-style">
+                <a data-goto=".contacts-key" href="#" style="text-align: center; background-color: rgb(255,221,45); border-radius: 100px; padding: 13px 35px; margin-right: 20px;"  name="scroll-button" class="fw-500 fs-22 typography-style link-style toolbar-btn">
                     Контакты
-                </a> -->
+                </a>
             </div>           
             <div style="margin-top: 50px; position: relative;" class="full-width d-flex flex-c justify-center align-center home-key">
                 <img alt="africa" src="./pictures/home.jpg" />
@@ -353,43 +374,45 @@
                         Контакты
                     </b>
                 </p>  
-                <div style="width: 80%; height: 80vh;">
+                <div style="column-gap: 30px;" class="d-flex flex-rc align-center full-width map-container">
+                    <div style="row-gap: 40px; margin-top: 30px; flex: 1 1 auto;" class="d-flex flex-c align-center">
+                        <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
+                            <b>
+                                Адрес
+                            </b>
+                        </p>
+                        <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
+                            <b>
+                                Москва, ул. Пырьева 5А с 2
+                            </b>
+                        </p>
+                        <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
+                            <b>
+                                Время работы
+                            </b>
+                        </p>
+                        <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
+                            <b>
+                                пн — пт: 10:00—20:00 <br/>
+                                сб — вс: 10:00—18:00
+                            </b>
+                        </p>
+                        <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
+                            <b>
+                                Для связи
+                            </b>
+                        </p>
+                        <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
+                            <b>
+                                +7 (967) 079 78 41 <br/>
+                                Александр Вячеславович
+                            </b>
+                        </p>
+                    </div>
+                    <div id="map" style="width: 95%; height: 80vh; margin-top: 30px; flex: 1 1 auto;">
                   
-                </div>
-                <div style="row-gap: 40px;" class="d-flex flex-c align-center">
-                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
-                        <b>
-                            Адрес
-                        </b>
-                    </p>
-                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
-                        <b>
-                            Москва, ул. Пырьева 5А с 2
-                        </b>
-                    </p>
-                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
-                        <b>
-                            Время работы
-                        </b>
-                    </p>
-                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
-                        <b>
-                            пн — пт: 10:00—20:00 <br/>
-                            сб — вс: 10:00—18:00
-                        </b>
-                    </p>
-                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
-                        <b>
-                            Для связи
-                        </b>
-                    </p>
-                    <p style="text-align: center;" class="typography-style fw-500 fs-32 full-width contacts-key general-color-text">
-                        <b>
-                            +7 (967) 079 78 41 <br/>
-                            Александр Вячеславович
-                        </b>
-                    </p>
-                </div>  
+                    </div>
+                </div>                 
             </div>         
         </div>    
     </div>            

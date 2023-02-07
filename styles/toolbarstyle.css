@@ -20,7 +20,7 @@
 }
 
 .burger {
-    display: block;
+    display: none;
     border: none;
 }
 
@@ -48,7 +48,7 @@
     text-decoration: line-through;
 }
 
-/* @media (max-width: 650px) {    
+@media (max-width: 650px) {    
     .toolbar-btn {
         display: none !important;
     }
@@ -56,13 +56,12 @@
     .burger {
         display: block;
     }
-} */
+}
 
 .toolbar-btn {
     flex: 1 1 auto;
     border-radius: 8px;
     border: none;
-    height: 100%;
     cursor: pointer;    
 }
 

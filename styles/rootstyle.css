@@ -1,7 +1,6 @@
 
 @import url("./normalize.css");
 @import url("./toolbarstyle.css");
-@import url("./aboutstyle.css");
 
 
 body {
@@ -159,6 +158,16 @@ div {
  .general-color-text {
     color: #9e510d;
  }
+
+ .flex-rc {
+    flex-direction: row;
+}
+
+@media (max-width: 680px) {
+    .flex-rc {
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 650px) {
     .aling-sc {
