@@ -10,4 +10,8 @@
     .map-container {
         flex-direction: column-reverse;
     }
+
+    .is-mobile-map-height {
+      max-height: 300px;
+    }
 }
