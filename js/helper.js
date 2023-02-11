@@ -69,9 +69,8 @@ function closeBurger()
     }
 }
 
-    function onMenuClick(e) {
-        const menuLink = e.target;
 
+function toggleActiveLinks() {   
         let links = document.getElementsByName("scroll-button");
 
         links.forEach(l => {
@@ -79,16 +78,22 @@ function closeBurger()
                 l.classList.remove("active-link");
             }
         });
+}
 
-        menuLink.classList.toggle("active-link");
+ // document.getElementById("page").addEventListener("scroll", toggleActiveLinks);
 
+    function onMenuClick(e) {
+        const menuLink = e.target; 
+
+        toggleActiveLinks(menuLink);
+        
         var d = document.getElementById("page").scrollTop;
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
         let t = gotoBlock.getBoundingClientRect().top;
         let b = document.querySelector("toolbar");
         let h = b === undefined || b === null ? 74 : b.offsetHeight;
         const gotoBlockValue = d + t + scrollY - h - 20;
-
+        
         document.getElementById("page").scrollTo({
             left: null,
             top: gotoBlockValue,
@@ -97,4 +102,5 @@ function closeBurger()
         e.preventDefault();  
         
         closeBurger(); 
+        menuLink.classList.toggle("active-link");
     }

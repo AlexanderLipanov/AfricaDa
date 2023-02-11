@@ -33,6 +33,35 @@ p {
     margin: 0;
 }
 
+.fs-general-title {
+    font-size: 32px;
+}
+
+.fs-sub-title-1 {
+    font-size: 24px;
+}
+
+.fs-content-1 {
+    font-size: 16px;
+}
+
+.fs-biggest-title {
+    font-size: 56px;
+    line-height: 36px;
+}
+
+.days-breack-point {
+    max-width: 230px;
+}
+
+.mt-80b {
+    margin-top: 80px;
+}
+
+.text-aling-cs {
+    text-align: center;
+}
+
 .d-flex {
     display: flex;
 }
@@ -95,6 +124,7 @@ p {
 
 .typography-style {
     font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fw-300 {
@@ -169,6 +199,61 @@ div {
 
 .home-tytle {
     font-size: 48px;
+}
+
+.swiper-break {
+    max-width: 507px;
+}
+
+@media (max-width: 1095px) {
+    .swiper-break {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 750px) {
+    .swiper-break {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 635px) {
+    .swiper-break {
+        max-width: 500px;
+    }
+    .fs-general-title {
+        font-size: 24px;
+    }
+    .fs-sub-title-1 {
+        font-size: 16px;
+    }
+    .fs-content-1 {
+        font-size: 14px;
+    }
+    .fs-biggest-title {
+        font-size: 28px;
+    }
+    .text-aling-cs {
+        text-align: start;
+    }
+    .days-breack-point {
+        max-width: none;
+    }
+    .mt-80b {
+        margin-top: 0;
+    }    
+}
+
+@media (max-width: 513px) {
+    .swiper-break {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 390px) {
+    .swiper-break {
+        max-width: 370px;
+    }
 }
 
 @media (max-width: 680px) {
