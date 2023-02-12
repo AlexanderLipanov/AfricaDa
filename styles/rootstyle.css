@@ -200,6 +200,10 @@ p {
     padding: 20px;
 }
 
+.pl-10 {
+    padding-left: 13px;
+}
+
 div {
     box-sizing: border-box;
 }

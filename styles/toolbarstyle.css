@@ -45,7 +45,8 @@
 }
 
 .active-link {
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
+    text-decoration: none;
 }
 
 .toolbar-wrapper {
