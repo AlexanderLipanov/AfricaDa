@@ -20,7 +20,7 @@
 }
 
 .burger {
-    display: none;
+    display: none !important;
     border: none;
 }
 
@@ -64,7 +64,7 @@
     }
     
     .burger {
-        display: block;
+        display: flex !important;
     }
     .toolbar-wrapper {
         max-width: 100%;

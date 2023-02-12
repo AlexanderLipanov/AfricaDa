@@ -6,7 +6,18 @@
     flex-direction: row;
 }
 
+@media (min-width: 1000px) {
+  #map {
+    width: 600px;
+  }
+}
+
   @media (max-width: 680px) {
+    #map {
+      width: none;
+      height: none;
+      margin-left: 0;
+    }
     .map-container {
         flex-direction: column-reverse;
     }

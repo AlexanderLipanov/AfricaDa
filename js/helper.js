@@ -53,8 +53,22 @@ if(links.length > 0)
     })
 }
 
+function animMenuButton() {
+    let b = document.getElementById("burger-button");
+
+    b.classList.toggle("close-anim-burger-btn");
+
+    let lines = document.getElementsByName("menu-animation-btn");
+
+    lines.forEach(l => {
+        l.classList.toggle("close-anim")
+    });
+}
+
 function toggleBurger() {
 
+    animMenuButton();
+   
     let m = document.getElementById("burger-menu");
 
     m.classList.toggle("active-menu");
@@ -69,11 +83,13 @@ function closeBurger()
     }
 }
 
+let currentScroll = 0;
 
 function toggleActiveLinks() {   
+        
         let links = document.getElementsByName("scroll-button");
 
-        links.forEach(l => {
+        links.forEach(l => {            
             if(l.classList.contains("active-link")) {
                 l.classList.remove("active-link");
             }
@@ -83,17 +99,15 @@ function toggleActiveLinks() {
  // document.getElementById("page").addEventListener("scroll", toggleActiveLinks);
 
     function onMenuClick(e) {
-        const menuLink = e.target; 
 
-        toggleActiveLinks(menuLink);
-        
+        const menuLink = e.target;         
         var d = document.getElementById("page").scrollTop;
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
         let t = gotoBlock.getBoundingClientRect().top;
         let b = document.querySelector("toolbar");
         let h = b === undefined || b === null ? 74 : b.offsetHeight;
         const gotoBlockValue = d + t + scrollY - h - 20;
-        
+        currentScroll = gotoBlockValue;
         document.getElementById("page").scrollTo({
             left: null,
             top: gotoBlockValue,
@@ -102,5 +116,7 @@ function toggleActiveLinks() {
         e.preventDefault();  
         
         closeBurger(); 
+        toggleActiveLinks();
         menuLink.classList.toggle("active-link");
+        animMenuButton();
     }
