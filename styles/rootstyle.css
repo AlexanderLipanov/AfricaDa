@@ -221,6 +221,10 @@ div {
     color: #9e510d;
  }
 
+ .swiper-pagination-bullet-active {
+    background-color: #9e510d !important;
+ }
+
  .flex-rc {
     flex-direction: row;
 }
