@@ -14,8 +14,8 @@
 
   @media (max-width: 680px) {
     #map {
-      width: none;
-      height: none;
+      width: unset;
+      height: unset;
       margin-left: 0;
     }
     .map-container {
