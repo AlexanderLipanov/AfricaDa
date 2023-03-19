@@ -110,3 +110,17 @@ const swiperTeacher = new Swiper('.swiper-teachers', {
  },
   });
 
+const swiperNews = new Swiper('.swiper-news', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 40,
+    fadeEffect: {
+        crossFade: true
+    },
+    autoplay: {
+        delay: 2300,
+    },
+});
+
