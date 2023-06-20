@@ -147,7 +147,6 @@ p {
 }
 
 .typography-style {
-    font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -264,6 +263,9 @@ div {
     }
     .swiper-news-pagination {
         bottom: 720px !important;
+    }
+    .fs-sub-title-1 {
+        font-size: 18px;
     }
 }
 
