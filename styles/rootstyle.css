@@ -274,6 +274,15 @@ div {
     .swiper-news {
         max-width: 700px;
     }
+
+    .swiper-button-mode {
+        width: 20px !important;
+        height: 30px !important;
+    }
+
+    .swiper-button-mode::after {
+        font-size: 30px !important;
+    }
 }
 
 @media (max-width: 750px) {
@@ -337,6 +346,13 @@ div {
 @media (max-width: 390px) {
     .swiper-break {
         max-width: 370px;
+    }
+}
+
+@media (max-width: 375px) {
+    .swiper-break {
+        max-width: 310px;
+        height: 290px !important;
     }
 }
 
