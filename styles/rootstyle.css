@@ -299,6 +299,9 @@ div {
     .swiper-news-pagination {
         bottom: 920px !important;
     }
+    .swiper-button-mode {
+        top: 17% !important;
+    }
 }
 
 @media (max-width: 635px) {
