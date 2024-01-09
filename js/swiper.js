@@ -119,8 +119,43 @@ const swiperNews = new Swiper('.swiper-news', {
     fadeEffect: {
         crossFade: true
     },
+    pagination: {
+      el: '.swiper-news-pagination',
+      type: 'bullets',
+    },
     autoplay: {
         delay: 2300,
     },
 });
+
+const swiperVideo = new Swiper('.swiper-video', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 40,
+  fadeEffect: {
+      crossFade: true
+  },
+  pagination: {
+    el: '.swiper-video-pagination',
+    type: 'bullets',
+  },
+  autoplay: {
+      delay: 2300,
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
+});
+
+
 

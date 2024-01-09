@@ -236,13 +236,19 @@ div {
     max-width: 507px;
 }
 
-.swiper-news {
+.swiper-news,
+.swiper-video {
     max-width: 1024px;
 }
 
 .swiper-news-pagination {
-    position: absolute !important;
-    bottom: 700px !important;
+    bottom: unset !important;
+    padding-top: 20px;
+}
+
+.swiper-video-pagination {
+    bottom: unset !important;
+    padding-top: 20px;
 }
 
 
