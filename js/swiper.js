@@ -40,6 +40,20 @@ const swiperTeacher = new Swiper('.swiper-teachers', {
     }
   });
 
+  const swiperAmharskiy = new Swiper('.swiper-amharskiy', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    autoplay: {
+   delay: 2000,
+ },
+  });
+
   const swiperSuahili = new Swiper('.swiper-suahili', {
     // Optional parameters
     direction: 'horizontal',
